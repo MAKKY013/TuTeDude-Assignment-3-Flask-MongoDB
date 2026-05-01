@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>All Submissions</title>
+</head>
+<body>
+    <h1>Submitted Data</h1>
+    <ul>
+        {% for sub in submissions %}
+            <li>{{ sub['name'] }} - {{ sub['email'] }}</li>
+        {% endfor %}
+    </ul>
+    <a href="/">Go back to form</a>
+</body>
+</html>
